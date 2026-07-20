@@ -1,0 +1,103 @@
+# OSINT Integrations Configuration
+# Enable/disable and configure individual integrations
+
+integrations:
+  # Username & Account Reconnaissance
+  sherlock:
+    enabled: true
+    timeout: 60
+    proxy: null
+    
+  maigret:
+    enabled: true
+    limit: 100
+    
+  blackbird:
+    enabled: false
+    
+  # Email Intelligence
+  theharvester:
+    enabled: true
+    api_key: null
+    limit: 100
+    sources:
+      - all
+      
+  holehe:
+    enabled: true
+    
+  h8mail:
+    enabled: false
+    api_key: null
+    
+  # Social Media Intelligence
+  ghunt:
+    enabled: false
+    api_key: null
+    
+  twint:
+    enabled: false
+    limit: 100
+    
+  osintgram:
+    enabled: false
+    
+  # Infrastructure Intelligence
+  oneforall:
+    enabled: false
+    
+  dnstwist:
+    enabled: false
+    
+  spiderfoot:
+    enabled: false
+    api_key: null
+    
+  photon:
+    enabled: false
+    
+  # Advanced Scanning
+  bbot:
+    enabled: false
+    
+  raccoon:
+    enabled: false
+    
+  # Tracking & Analysis
+  trape:
+    enabled: false
+    
+  ghosttrack:
+    enabled: false
+    
+  shadowbroker:
+    enabled: false
+    
+  # AI-Powered
+  robin:
+    enabled: false
+    api_key: null
+
+# Reporting Configuration
+reporting:
+  format: 
+    - json
+    - csv
+  pdf_enabled: false
+  include_risk_scores: true
+  include_correlations: true
+  anonymize: false
+  
+# Analysis Configuration
+analysis:
+  enable_ai: false
+  dark_web_check: false
+  breach_check: true
+  correlation_threshold: 0.7
+  max_workers: 5
+
+# Output Configuration
+output:
+  directory: ./osint_results
+  timestamp: true
+  verbose: false

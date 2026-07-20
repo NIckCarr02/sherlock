@@ -1,0 +1,57 @@
+# Sherlock Enhanced Requirements
+# Core Sherlock Dependencies
+sherlock-project>=0.16.0
+
+# Integration Tools - Username Reconnaissance
+maigret>=0.3.0
+
+# Integration Tools - Email Intelligence
+theHarvester>=4.3.0
+holehe>=1.0.0
+h8mail>=2.4.1
+
+# Integration Tools - Social Media
+twint>=2.1.20
+instaloader>=4.13.0
+
+# Integration Tools - Infrastructure
+dnstwist>=20230512
+
+# Integration Tools - Advanced Scanning
+bbot>=1.0.0
+
+# API & HTTP
+requests>=2.31.0
+requests-futures>=1.0.1
+aiohttp>=3.8.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Configuration
+PyYAML>=6.0
+python-dotenv>=1.0.0
+
+# Reporting
+reportlab>=4.0.0
+jinja2>=3.1.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Logging & Monitoring
+python-json-logger>=2.0.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-asyncio>=0.21.0
+
+# Code Quality
+black>=23.0.0
+flake8>=6.0.0
+mypy>=1.0.0
+
+# Development
+ipython>=8.0.0
